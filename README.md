@@ -6,6 +6,12 @@ You can use the file [circle_of_fifths.tex](circle_of_fifths.tex) to create thre
 
 ![example](example.JPG)
 
+*(older version)*
+
+In the LaTeX document look for the `Phase` comments and follow the instructions.
+
+Note in the 'modes'-layer you need to cut out the parts where it says `cut out`...
+
 If you cannot create the PDF's please download the [base.pdf](base.pdf), [modes.pdf](modes.pdf) and [chords.pdf](chords.pdf).
 
 *Many thanks to the authors of the code found in <https://tex.stackexchange.com/questions/442783/circle-of-fifths-diagram-with-printed-music-in-latex>*
