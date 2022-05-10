@@ -1,6 +1,6 @@
 # Circle Of Fiths
 
-Circle of fifths with modes and chord-finder written in LaTeX and TikZ.
+Circle of fifths with degrees, modes and chord-finder written in LaTeX and TikZ.
 
 ![example](example.png)
 
@@ -22,9 +22,9 @@ If you cannot create the PDF's please download the [base.pdf](base.pdf), [modes.
 
 The upper ring on the base plate shows the root note of the scales in the circle of fifths, below this note is the number of &flat; or &sharp; in that scale and below that the parallel minor root note (e.g. A- is the parallel minor of C).
 
-The middle ring shows the seven degrees (scale step) in a scale from **I&xutri;** to **vii&oslash;**. These consist of a roman number and a **&xutri;**, a **7** or a **&oslash;**. A upper roman number indicates a major chord (major third) and a lower roman number a minor chord (minor third). The **&xutri;** indicates a major seventh chord, the **7** a minor seventh chord and the **&oslash;** a half-diminished seventh chord (minor third, diminished fifth and minor seventh). Below the modes in some cases the odd note numbers above the octave are shown: the 9th, 11th and 13th as they are often used as extensions of a chord. Below that the names of the actual modes corresponding with the degree from **ionian** to **locrian**. Below the **ionian** and **aeolian** it shows the common names **major** and **natural minor**.
+The middle ring shows the seven degrees (scale step) in a scale from **I&xutri;** to **vii&oslash;**. These consist of a roman number and a **&xutri;**, a **7** or a **&oslash;**. An upper roman number indicates a major chord (major third) and a lower roman number a minor chord (minor third). The **&xutri;** indicates a major seventh chord, the **7** a minor seventh chord and the **&oslash;** a half-diminished seventh chord (minor third, diminished fifth and minor seventh). Below the modes in some cases the odd note numbers above the octave are shown: the 9th, 11th and 13th as they are often used as extensions of a chord. Below that the names of the modes corresponding with the degree from **ionian** to **locrian**. Below the **ionian** and **aeolian** it shows the common names **major** and **natural minor**.
 
-The inner disc show the notes in a chord in the wholes on the disc together with their note numbers. The chord is selected with the arrow on the disc (see [Usage](#usage) for more information).
+The inner disc show the notes in a chord in the holes on the disc together with their note numbers. The chord is selected with the arrow on the disc (see [Usage](#usage) for more information).
 
 ## Usage
 
