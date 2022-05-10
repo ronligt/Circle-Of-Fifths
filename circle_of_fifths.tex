@@ -50,12 +50,13 @@
 %%% Phase 1, Base plate: enable this!
 %%% Phase 2, Mode plate: disable this!
 %%% Phase 3, Chord plate: disable this!
+%%% Example: disable this! 
 
 %%%Chord notes
 
 \foreach \Note/\X in {C/0,G/1,D/2,A/3,E/4,B/5,G$\flat$/6,D$\flat$/-5,A$\flat$/-4,E$\flat$/-3,B$\flat$/-2,F/-1}
     {
-    \foreach \dX/\Y in {-0.33/5,0.33/5,0.25/4,0/2}
+    \foreach \dX/\Y in {-0.33/\ChordsR,0.33/\ChordsR,0.25/{\ChordsR-1},0/{\ChordsR-3}}
         {
         \pgfmathsetmacro{\rX}{\X+\dX}
         \draw(90-\rX*360/12:\Y) node [align=center, rotate=-\rX*360/12] {\Note};
@@ -67,6 +68,7 @@
 %%% Phase 1, Base plate: disable this!
 %%% Phase 2, Mode plate: enable this!
 %%% Phase 3, Chord plate: disable this!
+%%% Example: enable this, but disable line with "cut this"!
 
 %%%Modes
 
@@ -89,6 +91,7 @@
 %%% Phase 1, Base plate: disable this!
 %%% Phase 2, Mode plate: disable this!
 %%% Phase 3, Chord plate: enable this!
+%%% Example: enable this!
 
 %%%Chords
 
@@ -135,5 +138,20 @@
 % \draw (90-6*360/12:\ChordsR ) node [align=center, rotate=-6*360/12] {add\\to\\vii{\o}\\(5)};
 
 %%%Chords end
+
+%%% Phase 1, Base plate: disable this!
+%%% Phase 2, Mode plate: disable this!
+%%% Phase 3, Chord plate: disable this!
+%%% Example: enable this!
+
+%%%Example
+
+% \foreach \Note/\X/\Y in {C/-0.33/\rootY,G/1.25/\fifthY,E/4.33/\thirdY,B/5/\seventhY}
+%     {
+%     \draw(90-\X*360/12:\Y) node [align=center, rotate=-\X*360/12] {\Note};
+%     }
+
+%%%Example end
+
 \end{tikzpicture}
 \end{document}
