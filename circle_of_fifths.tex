@@ -53,14 +53,14 @@
 
 %%%Chord notes
 
-% \foreach \Note/\X in {C/0,G/1,D/2,A/3,E/4,B/5,G$\flat$/6,D$\flat$/-5,A$\flat$/-4,E$\flat$/-3,B$\flat$/-2,F/-1}
-%     {
-%     \foreach \dX/\Y in {-0.33/5,0.33/5,0.25/4,0/2}
-%         {
-%         \pgfmathsetmacro{\rX}{\X+\dX}
-%         \draw(90-\rX*360/12:\Y) node [align=center, rotate=-\rX*360/12] {\Note};
-%         }
-%     }
+\foreach \Note/\X in {C/0,G/1,D/2,A/3,E/4,B/5,G$\flat$/6,D$\flat$/-5,A$\flat$/-4,E$\flat$/-3,B$\flat$/-2,F/-1}
+    {
+    \foreach \dX/\Y in {-0.33/5,0.33/5,0.25/4,0/2}
+        {
+        \pgfmathsetmacro{\rX}{\X+\dX}
+        \draw(90-\rX*360/12:\Y) node [align=center, rotate=-\rX*360/12] {\Note};
+        }
+    }
 
 %%%Chord notes end
 
@@ -92,47 +92,47 @@
 
 %%%Chords
 
-\pgfmathsetmacro{\rootX}{-0.33}
-\pgfmathsetmacro{\rootY}{\ChordsR}
-\pgfmathsetmacro{\rootlblX}{\rootX+0.2}
-\pgfmathsetmacro{\rootlblY}{\rootY-0.2}
-\pgfmathsetmacro{\rootlbl}{1}
-\pgfmathsetmacro{\thirdAX}{4+0.33}
-\pgfmathsetmacro{\thirdAlblX}{\thirdAX-0.2}
-\pgfmathsetmacro{\thirdBX}{-3+0.33}
-\pgfmathsetmacro{\thirdBlblX}{\thirdBX-0.2}
-\pgfmathsetmacro{\thirdY}{\ChordsR}
-\pgfmathsetmacro{\thirdAlblY}{\thirdY-0.2}
-\pgfmathsetmacro{\thirdBlblY}{\thirdY-0.2}
-\pgfmathsetmacro{\thirdlbl}{3}
-\pgfmathsetmacro{\fifthX}{1+0.25}
-\pgfmathsetmacro{\fifthY}{\ChordsR-1}
-\pgfmathsetmacro{\fifthlblX}{\fifthX-0.25}
-\pgfmathsetmacro{\fifthlblY}{\fifthY+0.25}
-\pgfmathsetmacro{\fifthlbl}{5}
-\pgfmathsetmacro{\seventhAX}{5}
-\pgfmathsetmacro{\seventhAlblX}{\seventhAX-0.3}
-\pgfmathsetmacro{\seventhBX}{-2}
-\pgfmathsetmacro{\seventhBlblX}{\seventhBX+0.3}
-\pgfmathsetmacro{\seventhY}{\ChordsR-3}
-\pgfmathsetmacro{\seventhAlblY}{\seventhY+0.5}
-\pgfmathsetmacro{\seventhBlblY}{\seventhY+0.5}
-\pgfmathsetmacro{\seventhlbl}{7}
+% \pgfmathsetmacro{\rootX}{-0.33}
+% \pgfmathsetmacro{\rootY}{\ChordsR}
+% \pgfmathsetmacro{\rootlblX}{\rootX+0.2}
+% \pgfmathsetmacro{\rootlblY}{\rootY-0.2}
+% \pgfmathsetmacro{\rootlbl}{1}
+% \pgfmathsetmacro{\thirdAX}{4+0.33}
+% \pgfmathsetmacro{\thirdAlblX}{\thirdAX-0.2}
+% \pgfmathsetmacro{\thirdBX}{-3+0.33}
+% \pgfmathsetmacro{\thirdBlblX}{\thirdBX-0.2}
+% \pgfmathsetmacro{\thirdY}{\ChordsR}
+% \pgfmathsetmacro{\thirdAlblY}{\thirdY-0.2}
+% \pgfmathsetmacro{\thirdBlblY}{\thirdY-0.2}
+% \pgfmathsetmacro{\thirdlbl}{3}
+% \pgfmathsetmacro{\fifthX}{1+0.25}
+% \pgfmathsetmacro{\fifthY}{\ChordsR-1}
+% \pgfmathsetmacro{\fifthlblX}{\fifthX-0.25}
+% \pgfmathsetmacro{\fifthlblY}{\fifthY+0.25}
+% \pgfmathsetmacro{\fifthlbl}{5}
+% \pgfmathsetmacro{\seventhAX}{5}
+% \pgfmathsetmacro{\seventhAlblX}{\seventhAX-0.3}
+% \pgfmathsetmacro{\seventhBX}{-2}
+% \pgfmathsetmacro{\seventhBlblX}{\seventhBX+0.3}
+% \pgfmathsetmacro{\seventhY}{\ChordsR-3}
+% \pgfmathsetmacro{\seventhAlblY}{\seventhY+0.5}
+% \pgfmathsetmacro{\seventhBlblY}{\seventhY+0.5}
+% \pgfmathsetmacro{\seventhlbl}{7}
 
-\foreach \X/\Y/\lblX/\lblY/\lbl in {
-\rootX/\rootY/\rootlblX/\rootlblY/\rootlbl,
-\thirdAX/\thirdY/\thirdAlblX/\thirdAlblY/\thirdlbl,
-\thirdBX/\thirdY/\thirdBlblX/\thirdBlblY/\thirdlbl,
-\fifthX/\fifthY/\fifthlblX/\fifthlblY/\fifthlbl,
-\seventhAX/\seventhY/\seventhAlblX/\seventhAlblY/\seventhlbl,
-\seventhBX/\seventhY/\seventhBlblX/\seventhBlblY/\seventhlbl}
-    {
-    \draw (90-\X*360/12:\Y) node [circle,draw,minimum size =2em] {};
-    \draw (90-\lblX*360/12:\lblY) node[align=center, rotate=-\lblX*360/12] {\lbl};
-    }
+% \foreach \X/\Y/\lblX/\lblY/\lbl in {
+% \rootX/\rootY/\rootlblX/\rootlblY/\rootlbl,
+% \thirdAX/\thirdY/\thirdAlblX/\thirdAlblY/\thirdlbl,
+% \thirdBX/\thirdY/\thirdBlblX/\thirdBlblY/\thirdlbl,
+% \fifthX/\fifthY/\fifthlblX/\fifthlblY/\fifthlbl,
+% \seventhAX/\seventhY/\seventhAlblX/\seventhAlblY/\seventhlbl,
+% \seventhBX/\seventhY/\seventhBlblX/\seventhBlblY/\seventhlbl}
+%     {
+%     \draw (90-\X*360/12:\Y) node [circle,draw,minimum size =2em] {};
+%     \draw (90-\lblX*360/12:\lblY) node[align=center, rotate=-\lblX*360/12] {\lbl};
+%     }
 
-\draw [-stealth,ultra thick] (0,\ChordsR) -- (0,\CircRThree);
-\draw (90-6*360/12:\ChordsR ) node [align=center, rotate=-6*360/12] {add\\to\\vii{\o}\\(5)};
+% \draw [-stealth,ultra thick] (0,\ChordsR) -- (0,\CircRThree);
+% \draw (90-6*360/12:\ChordsR ) node [align=center, rotate=-6*360/12] {add\\to\\vii{\o}\\(5)};
 
 %%%Chords end
 \end{tikzpicture}
