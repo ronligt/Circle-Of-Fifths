@@ -1,0 +1,139 @@
+\documentclass[tikz,margin=0.5cm]{standalone}
+
+\begin{document}
+\begin{tikzpicture}
+
+\pgfmathsetmacro{\CircROne}{12}
+\pgfmathsetmacro{\CircRTwo}{9}
+\pgfmathsetmacro{\CircRThree}{6}
+\pgfmathsetmacro{\MajorR}{11}
+\pgfmathsetmacro{\ScaleR}{10.5}
+\pgfmathsetmacro{\MinorR}{10}
+\pgfmathsetmacro{\ModeChordR}{8}
+\pgfmathsetmacro{\ModeTextR}{7}
+\pgfmathsetmacro{\ChordsR}{5}
+
+% THE GRID
+\draw (0,0) circle (\CircROne);
+\draw (0,0) circle (\CircRTwo);
+\draw (0,0) circle (\CircRThree);
+\foreach \X in {0,1,...,12}
+    {
+    \draw (0,0)--++(75-\X*360/12:\CircROne);
+    }
+\draw [fill=white] (0,0) circle (1cm);
+\draw [fill=black] (0,0) circle (1mm);
+
+%%%Scale 
+
+\foreach \X/\Major/\Minor/\Scale in {
+-5/{C$\sharp$ D$\flat$}/{A$\sharp$~- B$\flat$~-}/5$\flat$,
+-4/A$\flat$/F~-/4$\flat$,
+-3/E$\flat$/C~-/3$\flat$,
+-2/B$\flat$/G~-/2$\flat$,
+-1/F/D~-/1$\flat$,
+0/C/A~-/{},
+1/G/E-/1$\sharp$,
+2/D/B~-/2$\sharp$,
+3/A/F$\sharp$~-/3$\sharp$,
+4/E/C$\sharp$~-/4$\sharp$,
+5/{B C$\flat$}/{G$\sharp$~- A$\flat$~-}/5$\sharp$,
+6/{F$\sharp$ G$\flat$}/{D$\sharp$~- E$\flat$~-}/{6$\sharp$ 6$\flat$}}
+    {
+    \draw (90-\X*360/12:\MajorR) node [align=left, rotate=-\X*360/12] {\Major};
+    \draw (90-\X*360/12:\ScaleR) node [align=left, rotate=-\X*360/12] {\Scale};
+    \draw (90-\X*360/12:\MinorR) node [align=center, rotate=-\X*360/12] {\Minor};
+    }
+
+%%%Scale end
+
+%%% Phase 1, Base plate: enable this!
+%%% Phase 2, Mode plate: disable this!
+%%% Phase 3, Chord plate: disable this!
+
+%%%Chord notes
+
+% \foreach \Note/\X in {C/0,G/1,D/2,A/3,E/4,B/5,G$\flat$/6,D$\flat$/-5,A$\flat$/-4,E$\flat$/-3,B$\flat$/-2,F/-1}
+%     {
+%     \foreach \dX/\Y in {-0.33/5,0.33/5,0.25/4,0/2}
+%         {
+%         \pgfmathsetmacro{\rX}{\X+\dX}
+%         \draw(90-\rX*360/12:\Y) node [align=center, rotate=-\rX*360/12] {\Note};
+%         }
+%     }
+
+%%%Chord notes end
+
+%%% Phase 1, Base plate: disable this!
+%%% Phase 2, Mode plate: enable this!
+%%% Phase 3, Chord plate: disable this!
+
+%%%Modes
+
+% \foreach \X/\ModeChord/\ModeText/\Ext/\Modern in {
+% 0/I$\triangle$/ionian/{}/major,
+% -2/ii7/dorian/9/{},
+% -4/iii7/phrygian/{}/{},
+% 1/IV$\triangle$/lydian/11/{},
+% -1/V7/mixolydian/{}/{},
+% -3/vi7/aeolian/13/{natural minor},
+% -5/vii{\o}/locrian/{}/{}}
+%     {
+%     \draw (90+\X*360/12:\ModeChordR) node[align=center, rotate=\X*360/12] {\ModeChord\\\Ext};
+%     \draw (90+\X*360/12:\ModeTextR) node[align=center, rotate=\X*360/12] {\ModeText\\\Modern};
+%     \draw (90+\X*360/12:5) node {cut this};
+%     }
+
+%%%Modes end
+
+%%% Phase 1, Base plate: disable this!
+%%% Phase 2, Mode plate: disable this!
+%%% Phase 3, Chord plate: enable this!
+
+%%%Chords
+
+\pgfmathsetmacro{\rootX}{-0.33}
+\pgfmathsetmacro{\rootY}{\ChordsR}
+\pgfmathsetmacro{\rootlblX}{\rootX+0.2}
+\pgfmathsetmacro{\rootlblY}{\rootY-0.2}
+\pgfmathsetmacro{\rootlbl}{1}
+\pgfmathsetmacro{\thirdAX}{4+0.33}
+\pgfmathsetmacro{\thirdAlblX}{\thirdAX-0.2}
+\pgfmathsetmacro{\thirdBX}{-3+0.33}
+\pgfmathsetmacro{\thirdBlblX}{\thirdBX-0.2}
+\pgfmathsetmacro{\thirdY}{\ChordsR}
+\pgfmathsetmacro{\thirdAlblY}{\thirdY-0.2}
+\pgfmathsetmacro{\thirdBlblY}{\thirdY-0.2}
+\pgfmathsetmacro{\thirdlbl}{3}
+\pgfmathsetmacro{\fifthX}{1+0.25}
+\pgfmathsetmacro{\fifthY}{\ChordsR-1}
+\pgfmathsetmacro{\fifthlblX}{\fifthX-0.25}
+\pgfmathsetmacro{\fifthlblY}{\fifthY+0.25}
+\pgfmathsetmacro{\fifthlbl}{5}
+\pgfmathsetmacro{\seventhAX}{5}
+\pgfmathsetmacro{\seventhAlblX}{\seventhAX-0.3}
+\pgfmathsetmacro{\seventhBX}{-2}
+\pgfmathsetmacro{\seventhBlblX}{\seventhBX+0.3}
+\pgfmathsetmacro{\seventhY}{\ChordsR-3}
+\pgfmathsetmacro{\seventhAlblY}{\seventhY+0.5}
+\pgfmathsetmacro{\seventhBlblY}{\seventhY+0.5}
+\pgfmathsetmacro{\seventhlbl}{7}
+
+\foreach \X/\Y/\lblX/\lblY/\lbl in {
+\rootX/\rootY/\rootlblX/\rootlblY/\rootlbl,
+\thirdAX/\thirdY/\thirdAlblX/\thirdAlblY/\thirdlbl,
+\thirdBX/\thirdY/\thirdBlblX/\thirdBlblY/\thirdlbl,
+\fifthX/\fifthY/\fifthlblX/\fifthlblY/\fifthlbl,
+\seventhAX/\seventhY/\seventhAlblX/\seventhAlblY/\seventhlbl,
+\seventhBX/\seventhY/\seventhBlblX/\seventhBlblY/\seventhlbl}
+    {
+    \draw (90-\X*360/12:\Y) node [circle,draw,minimum size =2em] {};
+    \draw (90-\lblX*360/12:\lblY) node[align=center, rotate=-\lblX*360/12] {\lbl};
+    }
+
+\draw [-stealth,ultra thick] (0,\ChordsR) -- (0,\CircRThree);
+\draw (90-6*360/12:\ChordsR ) node [align=center, rotate=-6*360/12] {add\\to\\vii{\o}\\(5)};
+
+%%%Chords end
+\end{tikzpicture}
+\end{document}
