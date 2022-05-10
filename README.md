@@ -8,7 +8,7 @@ You can use the file [circle_of_fifths.tex](circle_of_fifths.tex) to create thre
 
 *(older version)*
 
-In the LaTeX document look for the `Phase` comments and follow the instructions.
+In the LaTeX document look for the `Phase` comments and follow the instructions. Print after each phase. The document is set default to the first phase.
 
 Note in the 'modes'-layer you need to cut out the parts where it says `cut out`...
 
