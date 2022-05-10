@@ -16,4 +16,4 @@ Note in the 'modes'-layer you need to cut out the parts where it says `cut out`.
 
 If you cannot create the PDF's please download the [base.pdf](base.pdf), [modes.pdf](modes.pdf) and [chords.pdf](chords.pdf).
 
-*Many thanks to the authors of the code found in <https://tex.stackexchange.com/questions/442783/circle-of-fifths-diagram-with-printed-music-in-latex>*
+*Many thanks to Joel Mabus for his Wheel Of Fifths <http://www.joelmabus.com/mabus%20wheel%20of%20fifths.htm> and the authors of the code found in <https://tex.stackexchange.com/questions/442783/circle-of-fifths-diagram-with-printed-music-in-latex>*
