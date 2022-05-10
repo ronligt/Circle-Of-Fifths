@@ -1,6 +1,6 @@
 # Circle Of Fiths
 
-Circle of fifths with modes and chord-finder written in LaTeX.
+Circle of fifths with modes and chord-finder written in LaTeX and TikZ.
 
 You can use the file [circle_of_fifths.tex](circle_of_fifths.tex) to create three PDF's, print, cut out (, laminate) and join them in the center:
 
