@@ -1,5 +1,7 @@
 \documentclass[tikz,margin=0.5cm]{standalone}
 
+\usetikzlibrary{decorations.text}
+
 \begin{document}
 \begin{tikzpicture}
 
@@ -9,8 +11,10 @@
 \pgfmathsetmacro{\MajorR}{11}
 \pgfmathsetmacro{\ScaleR}{10.5}
 \pgfmathsetmacro{\MinorR}{10}
-\pgfmathsetmacro{\ModeChordR}{8}
-\pgfmathsetmacro{\ModeTextR}{7}
+\pgfmathsetmacro{\DegreeR}{8.25}
+\pgfmathsetmacro{\ExtR}{7.75}
+\pgfmathsetmacro{\ModeR}{7.25}
+\pgfmathsetmacro{\ModernR}{6.75}
 \pgfmathsetmacro{\ChordsR}{5}
 
 % THE GRID
@@ -24,12 +28,12 @@
 \draw [fill=white] (0,0) circle (1cm);
 \draw [fill=black] (0,0) circle (1mm);
 
+%%%Scale 
+
 %%% Phase 1, Base plate: enable this!
-%%% Phase 2, Mode plate: enable this!
+%%% Phase 2, Degree plate: enable this!
 %%% Phase 3, Chord plate: enable this!
 %%% Example: enable this! 
-
-%%%Scale 
 
 \foreach \X/\Major/\Minor/\Scale in {
 -5/{C$\sharp$ D$\flat$}/{A$\sharp$~- B$\flat$~-}/5$\flat$,
@@ -52,12 +56,12 @@
 
 %%%Scale end
 
+%%%Chord notes
+
 %%% Phase 1, Base plate: enable this!
-%%% Phase 2, Mode plate: disable this!
+%%% Phase 2, Degree plate: disable this!
 %%% Phase 3, Chord plate: disable this!
 %%% Example: disable this! 
-
-%%%Chord notes
 
 \foreach \Note/\X in {C/0,G/1,D/2,A/3,E/4,B/5,G$\flat$/6,D$\flat$/-5,A$\flat$/-4,E$\flat$/-3,B$\flat$/-2,F/-1}
     {
@@ -70,14 +74,14 @@
 
 %%%Chord notes end
 
+%%%Degree
+
 %%% Phase 1, Base plate: disable this!
-%%% Phase 2, Mode plate: enable this!
+%%% Phase 2, Degree plate: enable this!
 %%% Phase 3, Chord plate: disable this!
 %%% Example: enable this, but disable line with "cut this"!
 
-%%%Modes
-
-% \foreach \X/\ModeChord/\ModeText/\Ext/\Modern in {
+% \foreach \X/\Degree/\Mode/\Ext/\Modern in {
 % 0/I$\triangle$/ionian/{}/major,
 % -2/ii7/dorian/9/{},
 % -4/iii7/phrygian/{}/{},
@@ -86,19 +90,21 @@
 % -3/vi7/aeolian/13/{natural minor},
 % -5/vii{\o}/locrian/{}/{}}
 %     {
-%     \draw (90+\X*360/12:\ModeChordR) node[align=center, rotate=\X*360/12] {\ModeChord\\\Ext};
-%     \draw (90+\X*360/12:\ModeTextR) node[align=center, rotate=\X*360/12] {\ModeText\\\Modern};
+%     \draw (90+\X*360/12:\DegreeR) node[align=center, rotate=\X*360/12] {\Degree};
+%     \draw (90+\X*360/12:\ExtR) node[align=center, rotate=\X*360/12] {\Ext};
+%     \draw (90+\X*360/12:\ModeR) node[align=center, rotate=\X*360/12] {\Mode};
+%     \draw (90+\X*360/12:\ModernR) node[align=center, rotate=\X*360/12] {\Modern};
 %     \draw (90+\X*360/12:5) node {cut this};
 %     }
 
 %%%Modes end
 
+%%%Chords
+
 %%% Phase 1, Base plate: disable this!
-%%% Phase 2, Mode plate: disable this!
+%%% Phase 2, Degree plate: disable this!
 %%% Phase 3, Chord plate: enable this!
 %%% Example: enable this!
-
-%%%Chords
 
 % \pgfmathsetmacro{\rootX}{-0.33}
 % \pgfmathsetmacro{\rootY}{\ChordsR}
@@ -144,17 +150,23 @@
 
 %%%Chords end
 
+%%%Example
+
 %%% Phase 1, Base plate: disable this!
-%%% Phase 2, Mode plate: disable this!
+%%% Phase 2, Degree plate: disable this!
 %%% Phase 3, Chord plate: disable this!
 %%% Example: enable this!
 
-%%%Example
-
 % \foreach \Note/\X/\Y in {C/-0.33/\rootY,G/1.25/\fifthY,E/4.33/\thirdY,B/5/\seventhY}
 %     {
-%     \draw(90-\X*360/12:\Y) node [align=center, rotate=-\X*360/12] {\Note};
+%     \draw(90-\X*360/12:\Y) node [circle,draw=black,minimum size=2em,fill=gray, fill opacity=0.2,text opacity=1,align=center, rotate=-\X*360/12] {\Note};
 %     }
+
+% \draw[draw=none,fill=green,fill opacity=0.2,even odd rule]  (0,0) circle (\MajorR+0.25) (0,0) circle (\MajorR-0.25);
+% \draw[draw=none,fill=yellow,fill opacity=0.2,even odd rule]  (0,0) circle (\ScaleR+0.25) (0,0) circle (\ScaleR-0.25);
+% \draw[draw=none,fill=red,fill opacity=0.2,even odd rule]  (0,0) circle (\MinorR+0.25) (0,0) circle (\MinorR-0.25);
+% \draw[draw=none,fill=blue,fill opacity=0.2,even odd rule]  (0,0) circle (\DegreeR+0.25) (0,0) circle (\DegreeR-0.25);
+% \draw[draw=none,fill=orange,fill opacity=0.2,even odd rule]  (0,0) circle (\ExtR+0.25) (0,0) circle (\ExtR-0.25);
 
 %%%Example end
 
