@@ -42,8 +42,10 @@ The inner disc show the notes in a chord in the holes on the disc together with 
 
    ![find minor root](step_1_minor.png).
 1. Rotate the arrow on the inner disc to point to the desired chord (=degree) on the middle ring.
+
    ![find chord](step_2.png)
 1. On the inner disc you find the notes of that chord in the selected scale.
+
    ![find notes](step_3.png)
    Note that for the seventh degree **vii&oslash;** you will need to add the upper note indicted in the slice with "add to vii&oslash; (5)".
 
