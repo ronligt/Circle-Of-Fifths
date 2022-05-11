@@ -12,11 +12,15 @@ You can use the file [circle_of_fifths.tex](circle_of_fifths.tex) to create thre
 
 *(older version)*
 
+## Instruction
+
 In the LaTeX document look for the `Phase` comments and follow the instructions. Print after each phase. The document is set default to the first phase.
 
-Note in the 'modes'-layer you need to cut out the parts where it says `cut out`...
+Note that in the 'modes'-layer you need to cut out the parts where it says `cut out`...
 
 If you cannot create the PDF's please download the [base.pdf](base.pdf), [modes.pdf](modes.pdf) and [chords.pdf](chords.pdf).
+
+You can try to join the three pieces in the center with a [split pin](https://en.wikipedia.org/wiki/Brass_fastener).
 
 ## Description
 
