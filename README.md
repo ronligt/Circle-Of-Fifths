@@ -34,9 +34,15 @@ The inner disc show the notes in a chord in the holes on the disc together with 
 
 ## Usage
 
-1. Turn the middle ring (the degrees) with the **I&xutri;** (*ionian*) pointing to the root note of your major scale in the upper ring (closest to the edge, in the example above pointing to C) ![find major root](step_1_major.png). For the minor scale point the  **vi7** (*aeolian*) to the root note of your minor scale in the upper ring (again closest the edge, in the example above pointing to A) ![find minor root](step_1_minor.png).
-1. Rotate the arrow on the inner disc to point to the desired chord (=degree) on the middle ring ![find chord](step_2.png).
-1. On the inner disc you find the notes of that chord in the selected scale ![find notes](step_3.png). Note that for the seventh degree **vii&oslash;** you will need to add the upper note indicted in the slice with "add to vii&oslash; (5)".
+1. Turn the middle ring (the degrees) with the **I&xutri;** (*ionian*) pointing to the root note of your major scale in the upper ring (closest to the edge, in the example above pointing to C).
+   ![find major root](step_1_major.png)
+   For the minor scale point the  **vi7** (*aeolian*) to the root note of your minor scale in the upper ring (again closest the edge, in the example above pointing to A).
+   ![find minor root](step_1_minor.png).
+1. Rotate the arrow on the inner disc to point to the desired chord (=degree) on the middle ring.
+   ![find chord](step_2.png)
+1. On the inner disc you find the notes of that chord in the selected scale.
+   ![find notes](step_3.png)
+   Note that for the seventh degree **vii&oslash;** you will need to add the upper note indicted in the slice with "add to vii&oslash; (5)".
 
 ### Find the scale
 
