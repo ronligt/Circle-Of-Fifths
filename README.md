@@ -47,6 +47,7 @@ The inner disc show the notes in a chord in the holes on the disc together with 
 1. On the inner disc you find the notes of that chord in the selected scale.
 
    ![find notes](step_3.png)
+
    Note that for the seventh degree **vii&oslash;** you will need to add the upper note indicted in the slice with "add to vii&oslash; (5)".
 
 ### Find the scale
