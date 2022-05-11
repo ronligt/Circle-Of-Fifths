@@ -44,7 +44,7 @@ The inner disc show the notes in a chord in the holes on the disc together with 
 1. Rotate the arrow on the inner disc to point to the desired chord (=degree) on the middle ring.
 
    ![find chord](step_2.png)
-1. On the inner disc you find the notes of that chord in the selected scale.
+1. On the inner disc you find the notes of that chord in the selected scale (in the example on top: C-E-G-B).
 
    ![find notes](step_3.png)
 
