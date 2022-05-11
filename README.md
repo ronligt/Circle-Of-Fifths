@@ -86,7 +86,7 @@ Sometimes you see the following notation: **D/E**. This is called *D over E* (or
 
 Below is a list of symbols that can be used:
 
-| symbol | name | meaning | from tonic
+| symbol | name | meaning | semitones from tonic
 | :---: | --- | --- | :---:
 | - | *minor third* | | 3
 | m | *minor third* | | 3
