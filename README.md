@@ -69,7 +69,7 @@ Is the piece major or minor?
 
 ### Read a chord
 
-Chords are typically a combination of three or more notes. Each chord has a name indicating the root note of the chord together with added letters, numbers and symbols to specify all the other notes in the chord. An example of a chord can be C7:
+Chords are typically a combination of three or more notes. Each chord has a name indicating the root note of the chord together with added letters, numbers and symbols to specify all the other notes in the chord. An example of a chord can be **C7**:
 
 * The **C** indicates the root note of the chord
 * The C-chord consists of three notes: the tonic, the major third (four semitones from tonic) and the perfect fifth (seven semitones from tonic)
@@ -82,7 +82,7 @@ The resulting notes of this chord are:
 * G *perfect fifth*
 * B&flat; *minor seventh*
 
-Sometimes you see the following notation: **D/E**. This is called *D over E* (or *slash chord*) where the bass note is the E and not the tonic of D scale (being D).
+Sometimes you see the following notation: **D/E**. This is called *D over E* (or *slash chord*). The chord is **D** and the bass note is the **E** and not the tonic of D scale (being D).
 
 Below is a list of symbols that can be used:
 
