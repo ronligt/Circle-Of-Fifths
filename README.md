@@ -104,13 +104,13 @@ Below is a list of symbols that can be used:
 | + | *augmented fifth* | | 8
 | aug | *augmented fifth* | | 8
 | &sharp;5 | *augmented fifth* | also with other notes, e.g. &sharp;11 | 8
-| sus or sus4 | *perfect fourth* | instead of third | 5
-| sus2 | *major second* | instead of third | 2
-| 6 | *major sixth* | instead of fifth | 9
-| 9 | *major ninth* | mostly implies 7 | 14
-| 11 | *perfect eleventh* | mostly implies 7 | 17
-| 13 | *major thirteenth* | mostly implies 7 | 21
-| 6/9 or 6add9 | *six nine* | 6 instead of 5 and 9 instead of 7 | 0 - 3 - 9 - 14
+| sus or sus4 | *perfect fourth* | fourth instead of third | 5
+| sus2 | *major second* | second instead of third | 2
+| 6 | *major sixth* | sixth instead of fifth | 9
+| 9 | *major ninth* | mostly implies seventh | 14
+| 11 | *perfect eleventh* | mostly implies seventh | 17
+| 13 | *major thirteenth* | mostly implies seventh | 21
+| 6/9 or 6add9 | *six nine* | sixth instead of fifth and ninth instead of seventh | 0 - 3 - 9 - 14
 
 ## Acknowledgement
 
