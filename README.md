@@ -98,12 +98,12 @@ Below is a list of symbols that can be used:
 | m | *minor third* | | 3
 | &xutri; | *major seventh* | | 11
 | Maj7 or Maj or M7 or M | *major seventh* | | 11
-| &flat;5 | *diminished fifth* | also with other notes | 6
+| &flat;5 | *diminished fifth* | also with other notes, e.g. &flat;9 | 6
 | &oslash; | *half diminished* or *half dim* | *tonic* - *minor third* - *diminished fifth* -  *minor seventh* | 0 - 3 - 6 - 10
 | o or dim | *diminished* | *tonic* - *minor third* - *diminished fifth* -  *diminished seventh* | 0 - 3 - 6 - 9
 | + | *augmented fifth* | | 8
 | aug | *augmented fifth* | | 8
-| &sharp;5 | *augmented fifth* | also with other notes | 8
+| &sharp;5 | *augmented fifth* | also with other notes, e.g. &sharp;11 | 8
 | sus or sus4 | *perfect fourth* | instead of third | 5
 | sus2 | *major second* | instead of third | 2
 | 6 | *major sixth* | instead of fifth | 9
