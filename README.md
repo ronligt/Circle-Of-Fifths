@@ -6,6 +6,8 @@ Circle of fifths with degrees, modes and chord-finder written in LaTeX and TikZ.
 
 *Example*
 
+{:toc}
+
 You can use the file [circle_of_fifths.tex](circle_of_fifths.tex) to create three PDF's, print, cut out (, laminate) and join them in the center:
 
 ![photo](photo.png)
