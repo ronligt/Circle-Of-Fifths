@@ -24,6 +24,12 @@ You can try to join the three pieces in the center with a [split pin](https://en
 
 ## Description
 
+**nomenclature:**
+* *tonic*: the root or home note of a key
+* *key* and *scale*: the order of notes determined by the tonic. For the purpose of this text key and scale are similar. Although: "A scale is musical notes arranged in an order, whereas a key is determined by the tonic note from which we derive the chords of a scale. A mode is an elaboration of a scale." (from <https://www.musicianwave.com/key-vs-scale-vs-mode/>)
+* *degree*: the position of a particular note on a scale relative to the tonic (from <https://en.wikipedia.org/wiki/Degree_(music)>)
+* *mode*: a scale of notes with one key starting at different notes within that key, each mode with its own "characteristic melodic and harmonic behavior" (loosely from <https://en.wikipedia.org/wiki/Mode_(music)>)
+
 ![description](description.png)
 
 The upper ring on the base plate shows the root note (*tonic*) of the major keys **`[green ring]`** in the circle of fifths, below this note is the number of &flat; or &sharp; in that key **`[yellow ring]`** and below that the parallel minor tonic **`[red ring]`** (e.g. A- is the parallel minor of C).
