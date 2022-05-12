@@ -94,7 +94,7 @@ Below is a list of symbols that can be used:
 | Maj7 or Maj or M7 or M | *major seventh* | | 11
 | &flat;5 | *diminished fifth* | also with other notes | 6
 | &oslash; | *half diminished* or *half dim* | *tonic* - *minor third* - *diminished fifth* -  *minor seventh* | 0 - 3 - 6 - 10
-| o | *diminished* or *dim* | *tonic* - *minor third* - *diminished fifth* -  *diminished seventh* | 0 - 3 - 6 - 9
+| o or dim | *diminished* | *tonic* - *minor third* - *diminished fifth* -  *diminished seventh* | 0 - 3 - 6 - 9
 | + | *augmented fifth* | | 8
 | aug | *augmented fifth* | | 8
 | &sharp;5 | *augmented fifth* | also with other notes | 8
