@@ -67,10 +67,10 @@
 
 \foreach \Note/\X in {C/0,G/1,D/2,A/3,E/4,B/5,G$\flat$/6,D$\flat$/-5,A$\flat$/-4,E$\flat$/-3,B$\flat$/-2,F/-1}
     {
-    \foreach \dX/\Y in {-0.33/\ChordsR,0.33/\ChordsR,0.25/{\ChordsR-1},0/{\ChordsR-3}}
+    \foreach \dX/\Y in {-0.25/\ChordsR,0.25/{\ChordsR-1},0/{\ChordsR-2},0/{\ChordsR-3}}
         {
         \pgfmathsetmacro{\rX}{\X+\dX}
-        \draw(90-\rX*360/12:\Y) node [align=center, rotate=-\rX*360/12] {\Note};
+        \draw(90-\rX*360/12:\Y) node [align=center, rotate=-\rX*360/12] {\textbf{\Note}};
         }
     }
 
@@ -112,31 +112,35 @@
 %%% Example: enable this!
 %%% Example with colors: enable this!
 
-% \pgfmathsetmacro{\rootX}{-0.33}
+% % root
+% \pgfmathsetmacro{\rootX}{-0.25}
 % \pgfmathsetmacro{\rootY}{\ChordsR}
-% \pgfmathsetmacro{\rootlblX}{\rootX+0.2}
-% \pgfmathsetmacro{\rootlblY}{\rootY-0.2}
+% \pgfmathsetmacro{\rootlblX}{\rootX+0.20}
+% \pgfmathsetmacro{\rootlblY}{\rootY-0.45}
 % \pgfmathsetmacro{\rootlbl}{1}
-% \pgfmathsetmacro{\thirdAX}{4+0.33}
-% \pgfmathsetmacro{\thirdAlblX}{\thirdAX-0.2}
-% \pgfmathsetmacro{\thirdBX}{-3+0.33}
-% \pgfmathsetmacro{\thirdBlblX}{\thirdBX-0.2}
-% \pgfmathsetmacro{\thirdY}{\ChordsR}
+% % third (2x)
+% \pgfmathsetmacro{\thirdAX}{4+0.25}
+% \pgfmathsetmacro{\thirdBX}{-3+0.25}
+% \pgfmathsetmacro{\thirdY}{\ChordsR-1}
+% \pgfmathsetmacro{\thirdAlblX}{\thirdAX-0.30}
+% \pgfmathsetmacro{\thirdBlblX}{\thirdBX-0.30}
 % \pgfmathsetmacro{\thirdAlblY}{\thirdY-0.2}
 % \pgfmathsetmacro{\thirdBlblY}{\thirdY-0.2}
 % \pgfmathsetmacro{\thirdlbl}{3}
-% \pgfmathsetmacro{\fifthX}{1+0.25}
-% \pgfmathsetmacro{\fifthY}{\ChordsR-1}
-% \pgfmathsetmacro{\fifthlblX}{\fifthX-0.25}
-% \pgfmathsetmacro{\fifthlblY}{\fifthY+0.25}
+% % fifth
+% \pgfmathsetmacro{\fifthX}{1}
+% \pgfmathsetmacro{\fifthY}{\ChordsR-2}
+% \pgfmathsetmacro{\fifthlblX}{\fifthX-0.35}
+% \pgfmathsetmacro{\fifthlblY}{\fifthY+0.35}
 % \pgfmathsetmacro{\fifthlbl}{5}
+% % seventh (2x)
 % \pgfmathsetmacro{\seventhAX}{5}
-% \pgfmathsetmacro{\seventhAlblX}{\seventhAX-0.3}
 % \pgfmathsetmacro{\seventhBX}{-2}
-% \pgfmathsetmacro{\seventhBlblX}{\seventhBX+0.3}
 % \pgfmathsetmacro{\seventhY}{\ChordsR-3}
-% \pgfmathsetmacro{\seventhAlblY}{\seventhY+0.5}
-% \pgfmathsetmacro{\seventhBlblY}{\seventhY+0.5}
+% \pgfmathsetmacro{\seventhAlblX}{\seventhAX-0.3}
+% \pgfmathsetmacro{\seventhBlblX}{\seventhBX+0.3}
+% \pgfmathsetmacro{\seventhAlblY}{\seventhY+0.55}
+% \pgfmathsetmacro{\seventhBlblY}{\seventhY+0.55}
 % \pgfmathsetmacro{\seventhlbl}{7}
 
 % \foreach \X/\Y/\lblX/\lblY/\lbl in {
@@ -147,7 +151,7 @@
 % \seventhAX/\seventhY/\seventhAlblX/\seventhAlblY/\seventhlbl,
 % \seventhBX/\seventhY/\seventhBlblX/\seventhBlblY/\seventhlbl}
 %     {
-%     \draw (90-\X*360/12:\Y) node [circle,draw,minimum size =2em] {};
+%     \draw (90-\X*360/12:\Y) node [circle,draw,minimum size =2.5em] {};
 %     \draw (90-\lblX*360/12:\lblY) node[align=center, rotate=-\lblX*360/12] {\lbl};
 %     }
 
@@ -164,9 +168,9 @@
 %%% Example: enable this!
 %%% Example with colors: enable this!
 
-% \foreach \Note/\X/\Y in {C/-0.33/\rootY,G/1.25/\fifthY,E/4.33/\thirdY,B/5/\seventhY}
+% \foreach \Note/\X/\Y in {C/\rootX/\rootY,G/\fifthX/\fifthY,E/\thirdAX/\thirdY,B/\seventhAX/\seventhY}
 %     {
-%     \draw(90-\X*360/12:\Y) node [circle,draw=black,minimum size=2em,fill=gray, fill opacity=0.2,text opacity=1,align=center, rotate=-\X*360/12] {\Note};
+%     \draw(90-\X*360/12:\Y) node [circle,draw=black,minimum size=2.5em,fill=gray, fill opacity=0.2,text opacity=1,align=center, rotate=-\X*360/12] {\Note};
 %     }
 
 %%%Example end
