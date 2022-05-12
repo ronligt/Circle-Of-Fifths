@@ -1,6 +1,3 @@
-* Placeholder for Table of Content (Must not be removed)
-{:toc}
-
 # Circle Of Fifths
 
 Circle of fifths with degrees, modes and chord-finder written in LaTeX and TikZ.
