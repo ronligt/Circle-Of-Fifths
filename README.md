@@ -63,7 +63,7 @@ Disclaimer: the author of this text is an amateur musician at best and his theor
 There are several steps that might help to figure out the tonic and the key of a piece of music:
 
 1. how many &flat; or &sharp; are written at the start of the piece? In the upper ring you can find the corresponding major or minor key
-1. what is the last chord of the piece? More than often a piece of music ends with the root chord (chord starting with the tonic of the key)or tonic
+1. what is the last chord of the piece? More than often a piece of music ends with the root chord (chord starting with the tonic of the key) or tonic
 1. what is the first chord of the piece? Also often a piece of musics starts with the root chord
 1. check the chords in the piece and rotate the middle ring with the degrees until it fits (most) of these chords (pay attention to major/minor and seventh). At the first degree (**I&xutri;**) you will find the tonic of the major key in the upper ring and at the sixth degree (**vi7**) you will find the tonic of the minor key in the upper ring
 
