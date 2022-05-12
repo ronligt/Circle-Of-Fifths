@@ -1,3 +1,6 @@
+* Placeholder for Table of Content (Must not be removed)
+{:toc}
+
 # Circle Of Fifths
 
 Circle of fifths with degrees, modes and chord-finder written in LaTeX and TikZ.
@@ -5,8 +8,6 @@ Circle of fifths with degrees, modes and chord-finder written in LaTeX and TikZ.
 ![example](example.png)
 
 *Example*
-
-{:toc}
 
 You can use the file [circle_of_fifths.tex](circle_of_fifths.tex) to create three PDF's, print, cut out (, laminate) and join them in the center:
 
