@@ -14,7 +14,7 @@ You can use the file [circle_of_fifths.tex](circle_of_fifths.tex) to create thre
 
 For instructions, descriptions and more information please read the documentation:
 
-* https://ronligt.github.io/circle_of_fifths/
+* https://ronligt.github.io/Circle-Of-Fifths/
 
 ## Acknowledgement
 
