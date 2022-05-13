@@ -5,7 +5,7 @@ Circle of fifths with degrees, modes and chord-finder written in $`\LaTeX`$ and 
   <figcaption>Example</figcaption>
 </figure>
 
-You can use the file [circle_of_fifths.tex](https://github.com/ronligt/Circle-Of-Fifths/circle_of_fifths.tex) to create three PDF's, print, cut out (, laminate) and join them in the center:
+You can use the file [circle_of_fifths.tex](https://github.com/ronligt/Circle-Of-Fifths/blob/main/circle_of_fifths.tex) to create three PDF's, print, cut out (, laminate) and join them in the center:
 
 <figure markdown>
   ![photo](images/photo.png){ width="500" }
@@ -18,7 +18,7 @@ In the LaTeX document look for the `Phase` comments and follow the instructions.
 
 Note that in the 'degree'-layer you need to cut out the parts where it says `cut out`...
 
-If you cannot create the PDF's please download the [base.pdf](https://github.com/ronligt/Circle-Of-Fifths/base.pdf), [degree.pdf](https://github.com/ronligt/Circle-Of-Fifths/degree.pdf) and [chords.pdf](https://github.com/ronligt/Circle-Of-Fifths/chords.pdf).
+If you cannot create the PDF's please download the [base.pdf](https://github.com/ronligt/Circle-Of-Fifths/blob/main/base.pdf), [degree.pdf](https://github.com/ronligt/Circle-Of-Fifths/blobl/main/degree.pdf) and [chords.pdf](https://github.com/ronligt/Circle-Of-Fifths/blob/main/chords.pdf).
 
 You can try to join the three pieces in the center with a [split pin](https://en.wikipedia.org/wiki/Brass_fastener).
 
