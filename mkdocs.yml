@@ -1,4 +1,7 @@
 site_name: Circle Of Fifths
+site_url: https://ronligt.github.io/circle_of_fifths/
+
+repo_url: https://github.com/ronligt/circle_of_fifths
 
 theme:
   name: 'material'
