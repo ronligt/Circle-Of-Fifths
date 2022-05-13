@@ -2,13 +2,13 @@
 
 Circle of fifths with degrees, modes and chord-finder written in LaTeX and TikZ.
 
-![example](example.png)
+![example](images/example.png)
 
 *Example*
 
-You can use the file [circle_of_fifths.tex](circle_of_fifths.tex) to create three PDF's, print, cut out (, laminate) and join them in the center:
+You can use the file [circle_of_fifths.tex](https://github.com/ronligt/circle_of_fifths/circle_of_fifths.tex) to create three PDF's, print, cut out (, laminate) and join them in the center:
 
-![photo](photo.png)
+![photo](images/photo.png)
 
 *(older version)*
 
@@ -18,7 +18,7 @@ In the LaTeX document look for the `Phase` comments and follow the instructions.
 
 Note that in the 'degree'-layer you need to cut out the parts where it says `cut out`...
 
-If you cannot create the PDF's please download the [base.pdf](base.pdf), [degree.pdf](degree.pdf) and [chords.pdf](chords.pdf).
+If you cannot create the PDF's please download the [base.pdf](https://github.com/ronligt/circle_of_fifths/base.pdf), [degree.pdf](https://github.com/ronligt/circle_of_fifths/degree.pdf) and [chords.pdf](https://github.com/ronligt/circle_of_fifths/chords.pdf).
 
 You can try to join the three pieces in the center with a [split pin](https://en.wikipedia.org/wiki/Brass_fastener).
 
@@ -30,7 +30,7 @@ You can try to join the three pieces in the center with a [split pin](https://en
 * *degree*: the position of a particular note on a scale relative to the tonic (from <https://en.wikipedia.org/wiki/Degree_(music)>)
 * *mode*: a scale of notes within one key starting at a certain note in that key, each mode with its own "characteristic melodic and harmonic behavior" (loosely from <https://en.wikipedia.org/wiki/Mode_(music)>)
 
-![description](description.png)
+![description](images/description.png)
 
 The upper ring on the base plate shows the root note (*tonic*) of the major keys **`[green ring]`** in the circle of fifths, below this note is the number of &flat; or &sharp; in that key **`[yellow ring]`** and below that the parallel minor tonic **`[red ring]`** (e.g. A- is the parallel minor of C).
 
@@ -42,17 +42,17 @@ The inner disc show the notes in a chord in the holes on the disc together with 
 
 1. Turn the middle ring (the degrees) with the **I&xutri;** (*ionian*) pointing to the tonic of your major key in the upper ring (closest to the edge, in the example above pointing to C).
 
-   ![find major root](step_1_major.png)
+   ![find major root](images/step_1_major.png)
 
    For the minor key point the  **vi7** (*aeolian*) to the tonic of your minor key in the upper ring (again closest the edge, in the example above pointing to A).
 
-   ![find minor root](step_1_minor.png).
+   ![find minor root](images/step_1_minor.png).
 1. Rotate the arrow on the inner disc to point to the desired chord (=degree) on the middle ring.
 
-   ![find chord](step_2.png)
+   ![find chord](images/step_2.png)
 1. On the inner disc you find the notes of that chord in the selected key (in the example on top: C-E-G-B).
 
-   ![find notes](step_3.png)
+   ![find notes](images/step_3.png)
 
    Note that for the seventh degree **vii&oslash;** you will need to add the upper note indicted in the slice with "add to vii&oslash; (5)".
 
