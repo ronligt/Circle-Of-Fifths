@@ -1,14 +1,16 @@
-Circle of fifths with degrees, modes and chord-finder written in $\LaTeX$ and TikZ.
+Circle of fifths with degrees, modes and chord-finder written in $\LaTeX$ and PGF/Ti*k*Z.
 
-![example](images/example.png)
-
-*Example*
+<figure markdown>
+  ![example](images/example.png){ width="300" }
+  <figcaption>Example</figcaption>
+</figure>
 
 You can use the file [circle_of_fifths.tex](https://github.com/ronligt/circle_of_fifths/circle_of_fifths.tex) to create three PDF's, print, cut out (, laminate) and join them in the center:
 
-![photo](images/photo.png)
-
-*(older version)*
+<figure markdown>
+  ![photo](images/photo.png){ width="300" }
+  <figcaption>Photo of laminated parts (older version)</figcaption>
+</figure>
 
 ## Instruction
 
@@ -28,7 +30,10 @@ You can try to join the three pieces in the center with a [split pin](https://en
 * *degree*: the position of a particular note on a scale relative to the tonic (from <https://en.wikipedia.org/wiki/Degree_(music)>)
 * *mode*: a scale of notes within one key starting at a certain note in that key, each mode with its own "characteristic melodic and harmonic behavior" (loosely from <https://en.wikipedia.org/wiki/Mode_(music)>)
 
-![description](images/description.png)
+<figure markdown>
+  ![description](images/description.png){ width="300" }
+  <figcaption>Example with colors</figcaption>
+</figure>
 
 The upper ring on the base plate shows the root note (*tonic*) of the major keys **`[green ring]`** in the circle of fifths, below this note is the number of &flat; or &sharp; in that key **`[yellow ring]`** and below that the parallel minor tonic **`[red ring]`** (e.g. A- is the parallel minor of C).
 
