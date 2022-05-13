@@ -1,4 +1,4 @@
-Circle of fifths with degrees, modes and chord-finder written in LaTeX and TikZ.
+Circle of fifths with degrees, modes and chord-finder written in $\LaTeX$ and TikZ.
 
 ![example](images/example.png)
 
