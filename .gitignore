@@ -2,3 +2,6 @@
 *.code-workspace
 *.synctex.gz
 site/
+*.aux
+*.log
+circle_of_fifths.pdf
