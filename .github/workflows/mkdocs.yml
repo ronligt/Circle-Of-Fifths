@@ -48,4 +48,4 @@ jobs:
           echo test, and deploy your project.
       
       - name: Deploy MkDocs
-#       uses: mhausenblas/mkdocs-deploy-gh-pages@1.24
+        uses: mhausenblas/mkdocs-deploy-gh-pages@1.24
