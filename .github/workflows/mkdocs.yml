@@ -38,10 +38,10 @@ on:
 #       - name: Deploy MkDocs
 #         uses: mhausenblas/mkdocs-deploy-gh-pages@1.24
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
         with:
           fetch-depth: 0
       - uses: actions/setup-python@v2
@@ -50,4 +50,4 @@ jobs:
       - run: pip install mkdocs
       - run: pip install mkdocs-material
       – run: git config user.name 'github-actions[bot]' && git config user.email 'github-actions[bot]@users.noreply.github.com'
-      - run: mkdocs gh-deploy
+      - run: mkdocs gh-deploy --force
