@@ -12,22 +12,22 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: circle_of_fifths.tex
-          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=PDFs -c -jobname=base
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=PDFs -jobname=base
           pre_compile: "export BASE=1"
       - name: Compile degree.pdf
         uses: xu-cheng/latex-action@v2
         with:
           root_file: circle_of_fifths.tex
-          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=PDFs -c -jobname=degree
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=PDFs -jobname=degree
           pre_compile: "export DEGREE=1"
       - name: Compile chord.pdf
         uses: xu-cheng/latex-action@v2
         with:
           root_file: circle_of_fifths.tex
-          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=PDFs -c -jobname=chord
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=PDFs -jobname=chord
           pre_compile: "export CHORD=1"
       - name: Upload PDF
         uses: actions/upload-artifact@v2
         with:
           name: PDF
-          path: PDFs/
+          path: PDFs/*.pdf
