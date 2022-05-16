@@ -43,19 +43,19 @@ You can try to join the three pieces in the center with a [split pin](https://en
   <figcaption>Example with colors</figcaption>
 </figure>
 
-The upper ring on the base plate shows the root note (*tonic*) of the major keys ([green ring](){ .bg_green }) in the circle of fifths, below this note is the number of $`\flat`$ or $`\sharp`$ in that key ([yellow ring](){ .bg_yellow }) and below that the parallel minor tonic ([red ring](){ .bg_red }) (e.g. $`\textrm{A-}`$ is the parallel minor of $`\textrm{C}`$).
+The outer ring on the base plate shows the root note (*tonic*) of the major keys ([green ring](){ .bg_green }) in the circle of fifths, below this note is the number of $`\flat`$ or $`\sharp`$ in that key ([yellow ring](){ .bg_yellow }) and below that the parallel minor tonic ([red ring](){ .bg_red }) (e.g. $`\textrm{A-}`$ is the parallel minor of $`\textrm{C}`$).
 
-The middle ring shows the seven degrees (scale step) in a key from $`\textrm{I}\triangle`$  to $`\textrm{vii\o}`$ ([blue ring](){ .bg_blue }). These consist of a roman number and a $`\triangle`$, a 7 or a $`\textrm{\o}`$. An upper roman number indicates a major chord (major third) and a lower roman number a minor chord (minor third). The $`\triangle`$ indicates a major seventh chord, the 7 a minor seventh chord and the $`\textrm{\o}`$ a half-diminished seventh chord (minor third, diminished fifth and minor seventh). Below the degrees in some cases the odd note numbers above the octave are shown: the 9th, 11th and 13th as they are often used as extensions of a chord ([orange ring](){ .bg_orange }). Below that the names of the modes corresponding with the degree from $`\textrm{ionian}`$ to $`\textrm{locrian}`$ ([blue text](){ .blue }). Below the $`\textrm{ionian}`$ and $`\textrm{aeolian}`$ it shows the common names $`\textrm{major}`$ and $`\textrm{natural minor}`$ ([red text](){ .red }).
+The middle ring shows the seven degrees (scale step) in a key from $`\textrm{I}\triangle`$  to $`\textrm{vii\o}`$ ([blue ring](){ .bg_blue }). These consist of a roman number and a $`\triangle`$, a 7 or a $`\textrm{\o}`$. An upper case roman number indicates a major chord (major third) and a lower roman number a minor chord (minor third). The $`\triangle`$ indicates a major seventh chord, the 7 a minor seventh chord and the $`\textrm{\o}`$ a half-diminished seventh chord (minor third, diminished fifth and minor seventh). Below the degrees in some cases the odd note numbers above the octave are shown: the 9th, 11th and 13th as they are often used as extensions of a chord ([orange ring](){ .bg_orange }). Below that the names of the modes corresponding with the degree from $`\textrm{ionian}`$ to $`\textrm{locrian}`$ ([blue text](){ .blue }). Below the $`\textrm{ionian}`$ and $`\textrm{aeolian}`$ it shows the common names $`\textrm{major}`$ and $`\textrm{natural minor}`$ ([red text](){ .red }).
 
 The inner disc show the notes in a chord in the holes on the disc together with their note numbers. The chord is selected with the arrow on the disc (see [Usage](#usage) for more information).
 
 ## Usage
 
-1. Turn the middle ring (the degrees) with the $`\textrm{I}\triangle`$ (*ionian*) pointing to the tonic of your major key in the upper ring (closest to the edge, in the example above pointing to $`\textrm{C}`$).
+1. Turn the middle ring (the degrees) with the $`\textrm{I}\triangle`$ (*ionian*) pointing to the tonic of your major key in the outer ring (closest to the edge, in the example above pointing to $`\textrm{C}`$).
 
     ![find major root](images/step_1_major.png)
 
-    For the minor key point the  $`\textrm{vi}7`$ ($`\textrm{aeolian}`$) to the tonic of your minor key in the upper ring (again closest the edge, in the example above pointing to $`\textrm{A}`$).
+    For the minor key point the  $`\textrm{vi}7`$ ($`\textrm{aeolian}`$) to the tonic of your minor key in the outer ring (again closest the edge, in the example above pointing to $`\textrm{A}`$).
 
     ![find minor root](images/step_1_minor.png).
 
@@ -67,7 +67,7 @@ The inner disc show the notes in a chord in the holes on the disc together with 
 
     ![find notes](images/step_3.png)
 
-    Note that for the seventh degree $`\textrm{vii\o}`$ you will need to add the upper note indicted in the slice with "$`\textrm{add to vii\o (5)}`$".
+    Note that for the seventh degree $`\textrm{vii\o}`$ you will need to add the note in the outer ring indicted in the slice with "$`\textrm{add to vii\o (5)}`$".
 
 ### Find the scale
 
@@ -75,10 +75,10 @@ Disclaimer: the author of this text is an amateur musician at best and his theor
 
 There are several steps that might help to figure out the tonic and the key of a piece of music:
 
-1. how many $`\flat`$ or $`\sharp`$ are written at the start of the piece? In the upper ring you can find the corresponding major or minor key
+1. how many $`\flat`$ or $`\sharp`$ are written at the start of the piece? In the outer ring you can find the corresponding major or minor key
 1. what is the last chord of the piece? More than often a piece of music ends with the root chord (chord starting with the tonic of the key) or tonic
 1. what is the first chord of the piece? Also often a piece of musics starts with the root chord
-1. check the chords in the piece and rotate the middle ring with the degrees until it fits (most) of these chords (pay attention to major/minor and seventh). At the first degree ($`\textrm{I}\triangle`$) you will find the tonic of the major key in the upper ring and at the sixth degree ($`\textrm{vi}7`$) you will find the tonic of the minor key in the upper ring
+1. check the chords in the piece and rotate the middle ring with the degrees until it fits (most) of these chords (pay attention to major/minor and seventh). At the first degree ($`\textrm{I}\triangle`$) you will find the tonic of the major key in the outer ring and at the sixth degree ($`\textrm{vi}7`$) you will find the tonic of the minor key in the outer ring
 
 Is the piece major or minor?
 
