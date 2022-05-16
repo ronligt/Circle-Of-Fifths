@@ -12,8 +12,10 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: circle_of_fifths.tex
+          working_directory: PDFs
+          pre_compile: "export BASE=1"
       - name: Upload PDF
         uses: actions/upload-artifact@v2
         with:
           name: PDF
-          path: circle_of_fifths.pdf
+          path: PDFs/circle_of_fifths.pdf
