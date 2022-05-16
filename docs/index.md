@@ -18,7 +18,7 @@ In the LaTeX document look for the `Phase` comments and follow the instructions.
 
 Note that in the 'degree'-layer you need to cut out the parts where it says `cut out`...
 
-If you cannot create the PDF's please download the [base.pdf](https://github.com/ronligt/Circle-Of-Fifths/blob/main/base.pdf), [degree.pdf](https://github.com/ronligt/Circle-Of-Fifths/blob/main/degree.pdf) and [chords.pdf](https://github.com/ronligt/Circle-Of-Fifths/blob/main/chords.pdf).
+If you cannot create the PDF's please download the [base.pdf](https://github.com/ronligt/Circle-Of-Fifths/blob/main/base.pdf), [degree.pdf](https://github.com/ronligt/Circle-Of-Fifths/blob/main/degree.pdf) and [chord.pdf](https://github.com/ronligt/Circle-Of-Fifths/blob/main/chord.pdf).
 
 You can try to join the three pieces in the center with a [split pin](https://en.wikipedia.org/wiki/Brass_fastener).
 
