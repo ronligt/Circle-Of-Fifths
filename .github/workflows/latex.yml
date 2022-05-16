@@ -12,3 +12,8 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: circle_of_fifths.tex
+      - name: Upload PDF
+        uses: actions/upload-artifact@v2
+        with:
+          name: PDF
+          path: main.pdf

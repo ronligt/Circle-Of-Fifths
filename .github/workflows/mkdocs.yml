@@ -8,11 +8,15 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Set up Git repository
+        uses: actions/checkout@v2
         with:
           token: ${{ secrets.PERSONAL_TOKEN }}
-      - uses: actions/setup-python@v2
+      - name: Setup Python
+        uses: actions/setup-python@v2
         with:
           python-version: 3.x
-      - run: pip install mkdocs-material markdown-katex
-      - run: mkdocs gh-deploy --force
+      - name: Prepare mkdocs
+        run: pip install mkdocs-material markdown-katex
+      - name: Build website
+        run: mkdocs gh-deploy --force
