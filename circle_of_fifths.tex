@@ -35,6 +35,22 @@
 \getenv[\COLOR]{COLOR}
 %%% end Retrieve Environment Variables
 
+%%% Set Variable here for testing without environment variable
+%\def \COLOR {1}
+%%%
+
+%%% Setup combined variables
+\ifx\COLOR\TRUE
+\def \EXAMPLE {1}
+\fi
+
+\ifx\EXAMPLE\TRUE
+\def \BASE {1}
+\def \DEGREE {1}
+\def \CHORD {1}
+\fi
+%%% end Setup combined variables
+
 \begin{tikzpicture}
 
 \pgfmathsetmacro{\CircROne}{12}
@@ -152,12 +168,14 @@
     \draw (90+\X*360/12:\ModeR) node[align=center, rotate=\X*360/12] {\Mode};
     \draw (90+\X*360/12:\ModernR) node[align=center, rotate=\X*360/12] {\Modern};
     \fi
-    \ifx\EXAMPLE\TRUE
-    {}
-    \else
-    \draw (90+\X*360/12:5) node {cut this};
-    \fi
     }
+\ifx\EXAMPLE\TRUE
+{}
+\else
+\pgfmathsetmacro{\ArcStart}{90+15+30}
+\pgfmathsetmacro{\ArcEnd}{-15-30*2}
+\draw [fill=gray] (\ArcStart:6) arc (\ArcStart:\ArcEnd:6) -- (\ArcEnd:1) arc (\ArcEnd:\ArcStart:1) -- cycle;
+\fi
 \fi
 
 %%%Degree end
@@ -210,11 +228,17 @@
 \seventhAX/\seventhY/\seventhAlblX/\seventhAlblY/\seventhlbl,
 \seventhBX/\seventhY/\seventhBlblX/\seventhBlblY/\seventhlbl}
     {
+    \ifx\EXAMPLE\TRUE
     \draw (90-\X*360/12:\Y) node [circle,draw,minimum size =2.5em] {};
+    \else
+    \draw (90-\X*360/12:\Y) node [circle,fill=gray,draw,minimum size =2.5em] {};
+    \fi
     \draw (90-\lblX*360/12:\lblY) node[align=center, rotate=-\lblX*360/12] {\lbl};
     }
 
+% arrow
 \draw [-stealth,ultra thick] (0,\ChordsR) -- (0,\CircRThree);
+% halfdim info
 \draw (90-6*360/12:\ChordsR ) node [align=center, rotate=-6*360/12] {add\\to\\vii{\o}\\(5)};
 \fi
 
