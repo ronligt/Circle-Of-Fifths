@@ -12,44 +12,47 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: circle_of_fifths.tex
-          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=PDFs -jobname=base
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=output -jobname=base
           pre_compile: "export BASE=1"
       - name: Compile degree.pdf
         uses: xu-cheng/latex-action@v2
         with:
           root_file: circle_of_fifths.tex
-          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=PDFs -jobname=degree
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=output -jobname=degree
           pre_compile: "export DEGREE=1"
       - name: Compile chord.pdf
         uses: xu-cheng/latex-action@v2
         with:
           root_file: circle_of_fifths.tex
-          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=PDFs -jobname=chord
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=output -jobname=chord
           pre_compile: "export CHORD=1"
       - name: Compile example.pdf
         uses: xu-cheng/latex-action@v2
         with:
           root_file: circle_of_fifths.tex
-          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=PDFs -jobname=example
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=output -jobname=example
           pre_compile: "export EXAMPLE=1"
       - name: Compile description.pdf
         uses: xu-cheng/latex-action@v2
         with:
           root_file: circle_of_fifths.tex
-          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=PDFs -jobname=description
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=output -jobname=description
           pre_compile: "export COLOR=1"
-      - name: Convert PDF to PNG
+      - name: Convert example
         uses: jruipinto/ImageMagick-action@v1
         with:
-          command: convert -density 150 PDFs/example.pdf PDFs/example.png
-          # command: convert -crop 60%x60%x+0+0 -gravity northeast -density 150 PDFs/description.pdf PDFs/description.png
-      - name: Upload PDF
+          command: convert -density 150 -output/example.pdf output/example.png
+      - name: Convert example
+        uses: jruipinto/ImageMagick-action@v1
+        with:
+          command: convert -crop 60%x60%x+0+0 -gravity northeast -density 150 output/description.pdf output/description.png
+      - name: Upload PDF and PNG
         uses: actions/upload-artifact@v2
         with:
-          name: PDF
+          name: output
           path: |
-            PDFs/base.pdf
-            PDFs/degree.pdf
-            PDFs/chord.pdf
-            PDFs/example.png
-            PDFs/description.png
+            output/base.pdf
+            output/degree.pdf
+            output/chord.pdf
+            output/example.png
+            output/description.png
