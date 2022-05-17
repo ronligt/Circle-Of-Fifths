@@ -2,6 +2,7 @@
 
 \usetikzlibrary{decorations.text}
 
+%%% Prepare Retrieve Environment Variables
 \usepackage{xparse}
 
 \ExplSyntaxOn
@@ -22,12 +23,15 @@
 \ExplSyntaxOff
 
 \def \TRUE {1}
+%%% end Prepare Retrieve Environment Variables
 
 \begin{document}
 
+%%% Retrieve Environment Variables
 \getenv[\BASE]{BASE}
 \getenv[\DEGREE]{DEGREE}
 \getenv[\CHORD]{CHORD}
+%%% end Retrieve Environment Variables
 
 \begin{tikzpicture}
 
@@ -49,7 +53,7 @@
 \draw (0,0) circle (\CircRThree);
 \foreach \X in {0,1,...,12}
     {
-    \draw (0,0)--++(75-\X*360/12:\CircROne);
+    \draw [fill=white](0,0)--++(75-\X*360/12:\CircROne);
     }
 \draw [fill=white] (0,0) circle (1cm);
 \draw [fill=black] (0,0) circle (1mm);
