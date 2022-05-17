@@ -38,8 +38,16 @@ jobs:
           root_file: circle_of_fifths.tex
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=PDFs -jobname=description
           pre_compile: "export COLOR=1"
+      - name: Convert PDF to PNG
+        run: cd PDFs ; convert -density 150 example.pdf example.png
+        run: cd PDFs ; convert -crop 60%x60%x+0+0 -gravity northeast -density 150 description.pdf description.png
       - name: Upload PDF
         uses: actions/upload-artifact@v2
         with:
           name: PDF
-          path: PDFs/*.pdf
+          path: |
+            PDFs/base.pdf
+            PDFs/degree.pdf
+            PDFs/chord.pdf
+            PDFs/example.png
+            PDFs/description.png
