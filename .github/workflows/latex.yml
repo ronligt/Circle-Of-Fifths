@@ -41,7 +41,7 @@ jobs:
       - name: Convert example
         uses: jruipinto/ImageMagick-action@v1
         with:
-          command: convert -density 150 -output/example.pdf output/example.png
+          command: convert -density 150 output/example.pdf output/example.png
       - name: Convert example
         uses: jruipinto/ImageMagick-action@v1
         with:
