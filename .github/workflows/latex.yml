@@ -31,13 +31,13 @@ jobs:
         with:
           root_file: circle_of_fifths.tex
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=PDFs -jobname=example
-          pre_compile: "export DEGREE=1 CHORD=1 EXAMPLE=1"
+          pre_compile: "export EXAMPLE=1"
       - name: Compile description.pdf
         uses: xu-cheng/latex-action@v2
         with:
           root_file: circle_of_fifths.tex
           args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -outdir=PDFs -jobname=description
-          pre_compile: "export DEGREE=1 CHORD=1 EXAMPLE=1 COLOR=1"
+          pre_compile: "export COLOR=1"
       - name: Upload PDF
         uses: actions/upload-artifact@v2
         with:
