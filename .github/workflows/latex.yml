@@ -41,7 +41,8 @@ jobs:
       - name: Convert PDF to PNG
         uses: jruipinto/ImageMagick-action@v1
         with:
-          command: cd PDFs ; convert -density 150 example.pdf example.png ; convert -crop 60%x60%x+0+0 -gravity northeast -density 150 description.pdf description.png
+          command: convert -density 150 PDFs/example.pdf PDFs/example.png
+          command: convert -crop 60%x60%x+0+0 -gravity northeast -density 150 PDFs/description.pdf PDFs/description.png
       - name: Upload PDF
         uses: actions/upload-artifact@v2
         with:
