@@ -6,3 +6,5 @@ site/
 *.log
 *.fls
 circle_of_fifths.pdf
+env/
+.envrc
